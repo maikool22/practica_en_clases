@@ -18,7 +18,7 @@ resource "aws_security_group" "test-terraform-sg" {
   egress {
     from_port   = 0
     to_port     = 0
-    protocol    = "-1"
+    protocol    = "-1" # -1 significa todos los protocolos
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
